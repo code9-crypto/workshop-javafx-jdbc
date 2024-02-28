@@ -34,12 +34,12 @@ public class MainViewController implements Initializable{
 	
 	@FXML
 	public void onMenuItemDepartmentAction() {
-		System.out.println("onMenuItemDepartmentAction");
+		this.loadView("/gui/DepartmentList.fxml");
 	}
 	
 	@FXML
 	public void onMenuItemAboutAction() {
-		this.loadView("/gui/About.fxml");;
+		this.loadView("/gui/About.fxml");
 	}
 	
 	
@@ -49,6 +49,7 @@ public class MainViewController implements Initializable{
 		
 	}
 	
+	//Este é o método que carrega as outras telas dentro da MainView
 	private synchronized void loadView(String absoluteName) {
 		try {
 			//Este comando carrega uma outra página
