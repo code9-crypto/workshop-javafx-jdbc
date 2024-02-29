@@ -19,6 +19,7 @@ import model.services.DepartmentService;
 
 public class DepartmentListController implements Initializable {
 	
+	//Associando a classe DepartmentListController com a classe DepartmentService
 	private DepartmentService service;
 
 	@FXML
@@ -33,6 +34,7 @@ public class DepartmentListController implements Initializable {
 	@FXML
 	private Button btNew;
 	
+	//Este ObservableList é usada para apresentar os dados na tela da table view
 	private ObservableList<Department> obsList;
 	
 	@FXML
