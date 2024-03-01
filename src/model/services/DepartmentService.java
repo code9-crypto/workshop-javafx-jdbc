@@ -23,4 +23,12 @@ public class DepartmentService {
 		return list;*/
 	}
 	
+	public void saveOrUpdate(Department obj) {
+		if( obj.getId() == null ) {
+			dao.insert(obj);
+		}else {
+			dao.update(obj);
+		}
+	}
+	
 }
